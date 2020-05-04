@@ -10,6 +10,11 @@ inquirer
     },
     {
         type: "input",
+        message: "What is your email?",
+        name: "email"
+    },
+    {
+        type: "input",
         message: "What is the title of your Project?",
         name: "projectTitle"
     },
@@ -34,7 +39,12 @@ inquirer
         name: "credit"
     },
     {
-        type: "checkbox",
+        type: "input",
+        message: "Provide any tests",
+        name: "tests"
+    },
+    {
+        type: "list",
         message: "Choose a License",
         name: "license",
         choices: [
@@ -52,6 +62,8 @@ let readmeInfo =
 `# ${data.projectTitle}
 ## Description
 
+This project is created by ${data.username}(http://github.com/${data.username})
+for more information, contact at ${$data.email}
 ${data.description}
 
 ## Table of Contents
@@ -71,6 +83,10 @@ ${data.usage}
 ## Credits
 
 ${data.credit}
+
+## Tests
+
+${data.tests}
 
 ## License
 
