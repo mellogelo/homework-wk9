@@ -56,15 +56,14 @@ inquirer
 ])
 .then(function(data) {
 
-console.log(data)
-
 let readmeInfo = 
-// this is the readme result using user input
 `# ${data.projectTitle}
-## Description
 
 This project is created by [${data.username}](http://github.com/${data.username})
-for more information, contact at ${data.email} or follow at ![Github-social](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)
+for more information, contact at ${data.email} or follow at ![GitHub followers](https://img.shields.io/github/followers/${data.username}?style=social)
+
+## Description
+
 ${data.description}
 
 
@@ -93,7 +92,6 @@ ${data.tests}
 ## License
 
 ${data.license}`
-
 
 
 fs.writeFile("README.md", readmeInfo, function(err){    

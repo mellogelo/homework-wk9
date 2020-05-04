@@ -1,9 +1,11 @@
-# test
+# Homework Node wk9
+
 ## Description
 
 This project is created by [mellogelo](http://github.com/mellogelo)
-for more information, contact at rmagbanua09@gmail.com or follow at ![Github-social](https://img.shields.io/github/followers/mellogelo?label=Follow&style=social)
-wreqfvfhthwrw
+for more information, contact at thisismyemail@email.com or follow at ![GitHub followers](https://img.shields.io/github/followers/mellogelo?style=social)
+
+a readme generator using inputs
 
 
 ## Table of Contents
@@ -14,19 +16,19 @@ wreqfvfhthwrw
 
 ## Installation
 
-werqqw
+type in node index.js to terminal
 
 ## Usage
 
-cfgthyth
+generate a readme
 
 ## Credits
 
-werqadsc,mbgljgwf
+none
 
 ## Tests
 
-wqerkjgeuiqgdmbs
+none
 
 ## License
 
