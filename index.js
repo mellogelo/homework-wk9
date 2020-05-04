@@ -56,15 +56,17 @@ inquirer
 ])
 .then(function(data) {
 
-
 console.log(data)
+
 let readmeInfo = 
+// this is the readme result using user input
 `# ${data.projectTitle}
 ## Description
 
-This project is created by ${data.username}(http://github.com/${data.username})
-for more information, contact at ${$data.email}
+This project is created by [${data.username}](http://github.com/${data.username})
+for more information, contact at ${data.email} or follow at ![Github-social](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)
 ${data.description}
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -94,9 +96,7 @@ ${data.license}`
 
 
 
-
-
-fs.writeFile("README.md", readmeInfo + '\n', function(err){    
+fs.writeFile("README.md", readmeInfo, function(err){    
     if(err) {
         return console.log(err);
     }
